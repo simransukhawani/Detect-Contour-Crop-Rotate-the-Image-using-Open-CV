@@ -4,8 +4,8 @@ import numpy as np
 import os
 
 # Input and output folder paths
-input_folder = "D:\\ArduinoBoards_500\\Mydataset\\Boards"
-output_folder = "D:\\ArduinoBoards_500\\Output"
+input_folder = "Path to your input folder"
+output_folder = "Path of your output folder"
 
 # Function to process images in a folder
 def process_images(input_folder, output_folder):
