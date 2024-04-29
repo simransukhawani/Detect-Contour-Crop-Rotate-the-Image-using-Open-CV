@@ -1,16 +1,23 @@
-#Object Detection using OpenCV
+Contour Crop & Rotate is a project designed to automate the process of detecting contours, cropping images around the largest contour, and rotating the cropped region in 10-degree increments. This project is useful for augmenting datasets and enhancing data for machine learning applications.
 
-This project showcases the implementation of object detection using OpenCV, a powerful computer vision library in Python. The main objective is to detect and extract objects from images, specifically targeting Arduino boards.
+**Main Features**
+**Contour Detection:** Identifies contours using Canny edge detection and selects the largest one.
+**Region Cropping:** Crops the image around the largest contour.
+**Image Rotation:** Rotates the cropped region in 10-degree steps, creating multiple versions.
+**Background Color Change:** Allows you to set a specific background color for rotated images to avoid unwanted black borders.
 
-#Features
+**Requirements**
+Ensure Python is installed along with the following packages:
+>> pip install opencv-python numpy
 
-Image Processing: Utilizes various techniques such as edge detection, contour finding, and morphological operations to enhance object boundaries.
-Object Cropping: Identifies the largest contour in each image and extracts the object of interest.
-Image Rotation: Provides rotational variations for each cropped object, enhancing dataset diversity.
-Efficient Processing: Processes images in a specified input folder and saves the results in an output folder.
+**Usage Guide**
+* Set input_folder to the directory with your source images.
+* Set output_folder to the directory where the processed images will be saved.
+* Run the script to create cropped and rotated images.
 
-#Usage
-Input Images: Place the images to be processed in the specified input folder (input_folder).
-Run Script: Execute the provided Python script to process the images and save the results in the output folder (output_folder).
+**Customization Options**
+Rotation Step Size: Change the step size for image rotation by adjusting angle_step.
+Background Color: Set a different background color by modifying background_color.
 
-#Output: Processed images will be saved in the output folder with sequential numbering and rotation variations.
+**Contributions**
+Contributions are welcome! If you have suggestions for improvements or want to add new features, please submit a pull request.
